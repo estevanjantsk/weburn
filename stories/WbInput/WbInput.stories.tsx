@@ -12,5 +12,12 @@ const Template: ComponentStory<typeof WbInput> = (args) => <WbInput {...args} />
 
 export const Primary = Template.bind({})
 Primary.args = {
+  type: 'text',
+  placeholder: 'Text',
+}
+
+export const Search = Template.bind({})
+Search.args = {
+  type: 'search',
   placeholder: 'Search',
 }
